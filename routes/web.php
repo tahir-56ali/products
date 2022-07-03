@@ -11,13 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ProductController@index');
 
-Route::post('/', function (\Illuminate\Http\Request $request) {
-
-});
+Route::post('/', 'ProductController@store');
 
 Auth::routes();
 

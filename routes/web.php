@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::post('/', function (\Illuminate\Http\Request $request) {
 
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
